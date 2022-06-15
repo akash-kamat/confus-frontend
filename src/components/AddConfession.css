@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+
+.floating-container {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    bottom: 0;
+    right: 0;
+    margin: 35px 25px;
+    transition: all 0.3s ease;
+}
+
+
+.floating-container .floating-button {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    background: #292929;
+    bottom: 0;
+    border-radius: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: white;
+    line-height: 65px;
+    text-align: center;
+    font-size: 23px;
+    z-index: 100;
+    box-shadow: 0 10px 25px -5px rgba(31, 31, 31, 0.6);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.floating-container .float-element {
+    position: relative;
+    display: block;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 15px auto;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    line-height: 50px;
+    z-index: 0;
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+}
+
+.floating-container:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+.floating-container .float-element .material-icons {
+    vertical-align: middle;
+    font-size: 16px;
+}
+
+.floating-container .float-element:nth-child(1) {
+    background: #42A5F5;
+    box-shadow: 0 20px 20px -10px rgba(66, 165, 245, 0.5);
+}
+
+.floating-container .float-element:nth-child(2) {
+    background: #4CAF50;
+    box-shadow: 0 20px 20px -10px rgba(76, 175, 80, 0.5);
+}
+
+.floating-container .float-element:nth-child(3) {
+    background: #FF9800;
+    box-shadow: 0 20px 20px -10px rgba(255, 152, 0, 0.5);
+}
+
+.form-holder {
+    background: rgb(255, 255, 255);
+    padding-top: 4rem;
+    height: 100vh;
+}
+.form-box{
+    background-color: rgb(101, 95, 158);
+    width: min-content;
+    margin: 0 auto;
+    padding: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 8px #0000005a;
+    
+}
+.titleText,.confessionTitle{
+    color: #ffffff;
+    font-size: 1.5em;
+    font-family: 'Space Mono', monospace;
+}
+
+.confession-box{
+    margin-top: 50px;
+}
+
+.title-input,.confession-input{
+    border: 1px solid rgb(141, 141, 141);
+    padding: 3px;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.25s ease;
+}
+.title-input::placeholder{
+    color: rgba(0, 0, 0, 0.244);
+    font-style: italic;
+    letter-spacing: 3px;
+}
+
+.confess{
+    background-color: white;
+    border: 5px solid rgba(83, 116, 145, 0.595);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 4px;
+    width: 80%;
+    margin-top: 30px;
+    height: 50px;
+    transition: all 0.3s ease;
+}
+
+.title-input:active{
+    transform: scale(1.1);
+}
+
+.confession-input:active{
+    transform: scale(1.1);
+}
+
+.confess:hover{
+    transform: scale(1.1);
+    color: white;
+    background-color: black;
+}
+/* 
+font-family: 'PT Mono', monospace;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Sacramento', cursive;
+font-family: 'Secular One', sans-serif;
+font-family: 'Space Mono', monospace;
+ */

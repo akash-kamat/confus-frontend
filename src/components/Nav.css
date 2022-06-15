@@ -1,0 +1,9 @@
+.navbar{
+    font-size: 3rem;
+    color: white;
+    background-color: rgb(43, 43, 43);
+    font-family: 'PT Mono', monospace;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    padding: 10px 0 10px 30px;
+}
