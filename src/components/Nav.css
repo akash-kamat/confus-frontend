@@ -1,9 +1,29 @@
-.navbar{
+.navbar {
     font-size: 3rem;
     color: white;
     background-color: rgb(43, 43, 43);
     font-family: 'PT Mono', monospace;
     font-weight: 600;
     letter-spacing: 0.1em;
-    padding: 10px 0 10px 30px;
+    padding: 10px 0 5px 30px;
+}
+
+@keyframes dash {
+
+    0% {
+        transform: translate(-300px, 0) scale(1.2);
+    }
+
+    100% {
+        transform: translate(0, 0) scale(1);
+        ;
+
+    }
+}
+
+
+
+.nav-title {
+    font: inherit;
+    animation: dash 0.8s ease-out;
 }
