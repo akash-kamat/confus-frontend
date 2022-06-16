@@ -1,17 +1,19 @@
 import React from 'react'
+import Skeleton from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
 import './Confession.css'
 
-export default function Confession({ title, confession, date }) {
+export default function Confession() {
     return (
         <div className='main-container'>
             <div className='confession-title-container'>
-                {title}
+                {<Skeleton className='title-load' height={40} />}
             </div>
             <div className='confession-container'>
-                {confession}
+                {<Skeleton count={3} />}
             </div>
             <div className='date-container'>
-                {new Date(date).toLocaleDateString("en-CA", { weekday: "short", day: "numeric", month: "2-digit", year: "numeric" })}
+                {<Skeleton width={100} />}
             </div>
         </div>
     )

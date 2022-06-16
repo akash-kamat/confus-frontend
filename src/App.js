@@ -1,15 +1,17 @@
-import { useEffect,useState } from 'react';
+import { useEffect, useState } from 'react';
 import Nav from './components/Nav';
 import ConfessionList from './components/ConfessionList';
 import AddConfession from './components/AddConfession';
+import Loading from './components/Loading'
+
 import './App.css';
 
 function App() {
 
 
-  const [confessions,setConfessions] = useState([]);
-  const [route,setRoute] = useState("home");
-  const [n,setN] = useState([])
+  const [confessions, setConfessions] = useState([]);
+  const [route, setRoute] = useState("home");
+  const [n, setN] = useState([])
 
   useEffect(() => {
     var requestOptions = {
@@ -24,40 +26,44 @@ function App() {
         setRoute("home")
       })
       .catch(error => console.log('error', error));
-  },[n])
+  }, [n])
 
 
-  if (route=="home") {
+  if (route == "home") {
     return (
       <div className="App">
-        <Nav/>
+        <Nav />
         <ConfessionList confessions={confessions} />
         <div>
-          <div className="floating-container" onClick={()=>setRoute("form")}>
-              <div className="floating-button">+</div>
-  
+          <div className="floating-container" onClick={() => setRoute("form")}>
+            <div className="floating-button">+</div>
+
           </div>
-          
-      </div>
+
+        </div>
       </div>
     );
   }
-  else if (route=="loading") {
-    return(
+  else if (route == "loading") {
+    return (
       <div>
-        loading
+        <Nav />
+        <div className='confession-list-container'>
+          <Loading />
+          <Loading />
+        </div>
       </div>
     )
   }
-  else if (route=="form") {
-    return(
+  else if (route == "form") {
+    return (
       <div className="App">
-        <Nav setRoute={setRoute}/>
-        <AddConfession setRoute={setRoute} setN={setN}/>
+        <Nav setRoute={setRoute} />
+        <AddConfession setRoute={setRoute} setN={setN} />
       </div>
     )
   }
-  
+
 }
 
 export default App;

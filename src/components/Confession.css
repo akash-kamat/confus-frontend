@@ -1,4 +1,4 @@
-.confession-list-container{
+.confession-list-container {
     background-color: rgb(101, 95, 158);
     width: 95%;
     height: 100vh;
@@ -6,7 +6,7 @@
     overflow-y: scroll;
 }
 
-.main-container{
+.main-container {
     background-color: rgba(255, 255, 255, 0.988);
     border: 10px solid rgba(75, 106, 156, 0.247);
     border-radius: 5px;
@@ -14,24 +14,27 @@
     padding: 1.8em;
 }
 
-.confession-title-container{
+.confession-title-container {
     font-family: 'Secular One', sans-serif;
     font-size: 1.4rem;
 }
-.confession-container{
+
+.confession-container {
     font-family: 'Space Mono', monospace;
     font-size: 1.2rem;
     word-wrap: break-word;
     /* font-weight: 800; */
 }
-.date-container{
+
+.date-container {
     text-align: end;
     color: black;
     margin-top: 15px;
     opacity: 0.4;
 }
-@media only screen and (max-width: 600px){
-    .confession-container{
+
+@media only screen and (max-width: 600px) {
+    .confession-container {
         font-family: monospace;
         font-size: 1.1rem;
         margin-top: 10px;
@@ -39,6 +42,11 @@
         /* font-weight: 800; */
     }
 }
+
+.title-load {
+    margin-bottom: 20px;
+}
+
 /* 
 font-family: 'PT Mono', monospace;
 font-family: 'Roboto Mono', monospace;
