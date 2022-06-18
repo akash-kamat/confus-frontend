@@ -21,16 +21,22 @@
 # How to run locally :
 
 Clone Client: `git clone https://github.com/akash-kamat/confus-frontend.git`
-Clone Server: `git clone https://githib.com/akash-kamat/confus-backend.git`
+Clone Server: `git clone https://githib.com/akash-kamat/confus-server.git`
+
+
+### Server Setup
+
+1. In line 10 of `main.js` replace the connectionString with your own `const connectionString = " "` 
+2. Now run the following:
+
+```
+npm install
+npm start
+```
+3. This runs the server on [http://localhost:3001](http://localhost:3001)
 
 
 ### Front-end Setup
-
-1. First make a `firebase-config.js` file in the ```src``` directory
-2. Setup a firebase app from its console and initilalize the app ```firebase-config.js```
-3. Setup Realtime hosting from the firebase console
-
-### Back-end Setup
 
 1. In the project directory, run the following commands:
 
