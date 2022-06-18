@@ -14,19 +14,20 @@
 
 *Screenshots:*
 
-<img src="https://raw.githubusercontent.com/akash-kamat/firechat/master/pic2.png" width=75%>
+<img src="https://github.com/akash-kamat/confus-frontend/blob/main/Screenshot%20from%202022-06-18%2018-51-30.png?raw=true" width=75%>
 
 
 
 # How to run locally :
 
 Clone Client: `git clone https://github.com/akash-kamat/confus-frontend.git`
+
 Clone Server: `git clone https://githib.com/akash-kamat/confus-server.git`
 
 
 ### Server Setup
 
-1. In line 10 of `main.js` replace the connectionString with your own `const connectionString = " "` 
+1. In line 10 of `main.js` replace the connectionString with your own ``` const connectionString = " "; ````
 2. Now run the following:
 
 ```
