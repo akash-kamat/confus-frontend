@@ -27,7 +27,7 @@ Clone Server: `git clone https://githib.com/akash-kamat/confus-server.git`
 
 ### Server Setup
 
-1. In line 10 of `main.js` replace the connectionString with your own ``` const connectionString = " "; ````
+1. In line 10 of `main.js` replace the connectionString with your own ``` const connectionString = " "; ```
 2. Now run the following:
 
 ```
